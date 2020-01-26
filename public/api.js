@@ -9,7 +9,6 @@ const API = {
     const id = location.search.split("=")[1];
     console.log(id);
 
-
     if (id) {
       const res = await fetch("/api/workouts/" + id, {
         method: "PUT",
@@ -31,7 +30,7 @@ const API = {
       return json;
     }
   },
-  
+
   async createWorkout() {
     const res = await fetch("/api/workouts", {
       method: "POST",
